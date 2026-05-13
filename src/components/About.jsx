@@ -1,4 +1,4 @@
-import hellenPhoto from "../assets/Hellen.JPEG";
+import hellenPhoto from "../assets/Hellen.jpeg";
 import backgroundAbout from "../assets/backgroundAbout.PNG";
 
 export default function About() {
