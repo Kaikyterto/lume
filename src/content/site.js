@@ -2,11 +2,11 @@ export const siteContent = {
   brandName: "Lume",
   subtitle: "Odontologia integrada",
   email: "contato@teacherjade.com",
-  phoneDisplay: "(19) 99160-6984",
-  phoneDigits: "5519991606984",
-  defaultMessage: "Olá! Quero saber mais sobre as aulas.",
-  primaryCtaLabel: "Começar agora",
-  primaryCtaMessage: "Olá! Quero começar as aulas.",
+  phoneDisplay: "(87) 9667-7897",
+  phoneDigits: "558796677897",
+  defaultMessage: "Olá! Gostaria de agendar uma consulta",
+  primaryCtaLabel: "Agendar consulta",
+  primaryCtaMessage: "Olá! Gostaria de agendar uma consulta.",
 };
 
 export function getWhatsAppUrl(
@@ -24,137 +24,91 @@ export const navItems = [
   { label: "Home", href: "#hero" },
   { label: "Sobre", href: "#about" },
   { label: "Depoimentos", href: "#testimonials" },
-  { label: "Planos", href: "#card" },
   { label: "FAQ", href: "#faq" },
   { label: "Contato", href: "#footer" },
 ];
 
-export const plans = [
-  {
-    name: "Dupla",
-    packageOneClass: "12x de R$ 329,99",
-    packageTwoClasses: "12x de R$ 599,99",
-    message: "Olá! Quero saber mais sobre o plano Dupla.",
-  },
-  {
-    name: "Trio",
-    packageOneClass: "12x de R$ 279,99",
-    packageTwoClasses: "12x de R$ 459,99",
-    message: "Olá! Quero saber mais sobre o plano Trio.",
-  },
-  {
-    name: "Grupo (4 ou mais)",
-    packageOneClass: "12x de R$ 249,99",
-    packageTwoClasses: "12x de R$ 419,99",
-    message: "Olá! Quero saber mais sobre o plano Grupo (4 ou mais).",
-    featured: true,
-  },
-  {
-    name: "VIP",
-    packageOneClass: "12x de R$ 449,99",
-    packageTwoClasses: "12x de R$ 799,99",
-    message: "Olá! Quero saber mais sobre o plano VIP.",
-  },
-];
-
 export const faqData = [
   {
-    question: "Eu não sei nada de inglês, vou conseguir acompanhar a turma?",
+    question:
+      "Meu filho(a) tem medo de dentista. Ele(a) vai conseguir ser atendido(a)?",
     answer:
-      "Sim, as turmas beginner começam do zero, eu ensino desde cumprimentos, letras e números.",
+      "Sim. Nosso atendimento é totalmente acolhedor e pensado para que a criança se sinta segura e tranquila durante toda a consulta.",
   },
   {
-    question: "Posso remarcar a aula?",
+    question: "Posso acompanhar meu filho(a) durante a consulta?",
     answer:
-      "Sim. Aula individual pode remarcar com pelo menos 24h de antecedência, aulas em grupo o aluno recebe a gravação da aula em caso de falta",
+      "Sim. Em atendimentos infantis, os pais ou responsáveis podem acompanhar para trazer mais conforto e segurança à criança.",
   },
   {
-    question: "Quanto tempo pra eu ficar fluente?",
+    question: "Com que idade a criança deve ir ao dentista?",
     answer:
-      "Depende da sua dedicação. Tirando tempo todos os dias para estudar você vai perceber uma avanço bem rápido.",
+      "O ideal é a primeira consulta ainda na infância, assim que os primeiros dentes nascem, para prevenção e acompanhamento do desenvolvimento.",
   },
   {
-    question: "Qual a duração das aulas?",
-    answer: "As aulas tem duração de 1 hora.",
-  },
-  {
-    question: "Tem material?",
+    question: "Qual a duração da consulta?",
     answer:
-      "Sim, eu disponibilizo um material online interativo sem custo adicional.",
+      "As consultas geralmente duram entre 30 minutos e 1 hora, dependendo do tipo de atendimento e da necessidade da criança.",
   },
   {
-    question: "Individual é melhor do que em grupo?",
+    question: "Vocês atendem urgências odontológicas infantis?",
     answer:
-      "Depende. Se você tem uma necessidade muito específica o Individual vai ser uma vantagem por ser 100% personalizado para a sua necessidade. Mas se o seu intuito for destravar a comunicação, eu tenho observado resultados melhores nas aulas em grupo, por conta da interação e do incentivo dos colegas.",
+      "Sim. Em casos de dor ou urgência, priorizamos o atendimento o mais rápido possível para o conforto da criança.",
   },
   {
-    question: "Como funciona o pagamento?",
+    question: "Como funciona o agendamento?",
     answer:
-      "Após a assinatura do contrato o pagamento é feito de forma mensal, via Pix, na data da sua preferência.",
-  },
-  {
-    question: "Tem certificado?",
-    answer:
-      "Sim, emitimos certificado com validade em todo o território nacional.",
-  },
-  {
-    question: "Emite nota fiscal?",
-    answer: "Sim, emitimos nota fiscal caso seja necessário. ",
-  },
-  {
-    question: "1 vez por semana não é muito pouco?",
-    answer:
-      "Meus alunos no geral tem pouco tempo para estudar, e eles tem tido resultados muito satisfatórios fazendo apenas uma aula por semana, como o caso do Douglas, que conseguiu destravar a fala em poucos meses, mesmo fazendo aula apenas 1 vez por semana, e sem estudar nada por fora.",
+      "O agendamento pode ser feito pelo WhatsApp ou telefone, escolhendo o melhor horário disponível para a família.",
   },
 ];
 
 export const testimonialTexts = [
   {
-    name: "Elvis",
-    role: "Aluno",
+    name: "Mariana",
+    role: "Mãe de paciente",
     quote:
-      "Uma aula muito produtiva com uma excelente profissional, ajuda quem esta comecando com uma aula muito dinamica.",
+      "Atendimento maravilhoso! Minha filha ficou super tranquila e saiu feliz da consulta. Ambiente acolhedor e muito cuidado com as crianças.",
   },
   {
-    name: "Marcio",
-    role: "Aluno",
+    name: "Carlos",
+    role: "Pai de paciente",
     quote:
-      "Jade e uma excelente professora, ela e paciente, uma pessoa atenciosa, sua explicacao e clara e eficiente.",
+      "Excelente experiência. Profissionais muito pacientes e atenciosos, conseguiram deixar meu filho calmo durante todo o atendimento.",
   },
   {
-    name: "Adriano",
-    role: "Aluno",
+    name: "Juliana",
+    role: "Mãe de paciente",
     quote:
-      "Ela e muito paciente e da aula da melhor maneira para alcancar seu objetivo. Estou gostando muito.",
+      "A clínica é incrível! Minha filha tinha medo de dentista, mas agora vai sem medo nenhum. Muito carinho e atenção em cada detalhe.",
   },
   {
-    name: "Jacob",
-    role: "Aluno",
+    name: "Roberto",
+    role: "Pai de paciente",
     quote:
-      "A Jade esta sendo fundamental para mim, tem me ajudado bastante com meu ingles. Ela e muito atenciosa e com muita paciencia, super indico.",
+      "Equipe muito preparada para lidar com crianças. Atendimento leve, explicativo e com muita segurança para os pequenos.",
   },
   {
-    name: "Bianca",
-    role: "Aluna",
+    name: "Fernanda",
+    role: "Mãe de paciente",
     quote:
-      "Estou amando as aulas com a Professora Jade. Ela e muito atenciosa e estimula muito no speaking, dando seguranca e muita atencao. Estamos evoluindo muito a cada aula.",
+      "Minha filha adorou a experiência! Foi tudo muito divertido e cuidadoso, realmente transformaram a ida ao dentista em algo positivo.",
   },
   {
-    name: "Felipe",
-    role: "Aluno",
+    name: "Lucas",
+    role: "Pai de paciente",
     quote:
-      "Jade e uma otima professora, tem paciencia e respeita o tempo de cada aluno. Estou vendo evolucao e a cada aula damos um passo, step by step.",
+      "Profissionais excelentes, tratam as crianças com muita paciência e respeito. Estamos muito satisfeitos com o atendimento.",
   },
   {
-    name: "Vanessa",
-    role: "Mae de aluno",
+    name: "Patrícia",
+    role: "Mãe de paciente",
     quote:
-      "Ela foi muito paciente com meu filho, manteve a aula muito descontraida deixando ele tranquilo na aula. Obrigada.",
+      "Ambiente acolhedor e equipe muito gentil. Meu filho se sentiu seguro durante todo o atendimento, recomendo demais.",
   },
   {
-    name: "Douglas",
-    role: "Aluno",
+    name: "André",
+    role: "Pai de paciente",
     quote:
-      "Excelente professora, muito tranquilo de prosseguir a aula, estou adorando.",
+      "Ótima clínica infantil. Atendimento humanizado e muito cuidadoso com cada detalhe para deixar as crianças confortáveis.",
   },
 ];

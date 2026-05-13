@@ -1,4 +1,4 @@
-import aboutPhoto from "../assets/aboutPhoto.JPEG";
+import hellenPhoto from "../assets/Hellen.jpeg";
 import backgroundAbout from "../assets/backgroundAbout.png";
 
 export default function About() {
@@ -20,7 +20,7 @@ export default function About() {
         {/* IMAGEM */}
         <div className="overflow-hidden rounded-3xl shadow-xl border border-lightBlue bg-white">
           <img
-            src={aboutPhoto}
+            src={hellenPhoto}
             alt="Dra. Hellen Dias - Clínica Odontológica"
             className="h-full w-full object-cover"
           />

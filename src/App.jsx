@@ -1,5 +1,4 @@
 import About from "./components/About";
-import Card from "./components/Card";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -18,7 +17,6 @@ function App() {
         <About />
         <WhyChoose />
         <Testimonials />
-        <Card />
         <Faq />
       </main>
       <Footer />

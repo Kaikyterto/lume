@@ -9,7 +9,6 @@ export default function Hero() {
       id="hero"
       className="relative overflow-hidden py-24 font-sans bg-gradient-to-br from-primary/20 via-white to-lightBlue/20"
     >
-      {/* BACKGROUND */}
       <div
         className="absolute inset-0 z-0 pointer-events-none overflow-hidden"
         aria-hidden="true"
@@ -40,7 +39,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="#services"
+              href="#whychoose"
               className="rounded-full px-6 py-3 font-semibold border-2 border-purple text-purple hover:bg-purple/10 transition"
             >
               Nossos Serviços

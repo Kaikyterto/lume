@@ -1,27 +1,40 @@
 import {
   Baby,
-  Bone,
+  Activity,
   Smile,
   ShieldPlus,
   Stethoscope,
   Sparkles,
   ScanFace,
+  Syringe,
+  BadgePlus,
 } from "lucide-react";
 
 export default function Services() {
   const services = [
     { title: "Odontopediatria", icon: Baby },
-    { title: "Ortopedia Funcional", icon: Bone },
+    { title: "Ortopedia Funcional", icon: Activity },
     { title: "Ortodontia", icon: Smile },
-    { title: "Sedação Odontológica", icon: ShieldPlus },
+    { title: "Implantodontia", icon: BadgePlus },
+    { title: "Sedação Odontológica", icon: Syringe },
     { title: "Clínico Geral", icon: Stethoscope },
     { title: "Reabilitação e Estética", icon: Sparkles },
     { title: "Harmonização Orofacial", icon: ScanFace },
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="mx-auto w-full max-w-6xl px-6 text-center">
+    <section
+      id="whychoose"
+      className="relative overflow-hidden py-20 bg-gradient-to-br from-primary/10 via-white to-lightBlue/20"
+    >
+      {/* BACKGROUND BLURS */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="absolute -top-20 -right-20 w-80 h-80 rounded-full bg-lightBlue/30 blur-3xl" />
+        <div className="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-primary/20 blur-3xl" />
+      </div>
+
+      <div className="relative mx-auto w-full max-w-6xl px-6 text-center">
+        {/* HEADER */}
         <h2 className="text-3xl font-bold text-primary">Nossos serviços</h2>
 
         <p className="mx-auto mt-4 max-w-2xl text-lg text-primary/80">
@@ -29,6 +42,7 @@ export default function Services() {
           segurança, tecnologia e conforto.
         </p>
 
+        {/* GRID */}
         <div className="mt-12 grid gap-8 md:grid-cols-3">
           {services.map((item) => {
             const Icon = item.icon;
@@ -36,30 +50,19 @@ export default function Services() {
             return (
               <article
                 key={item.title}
-                className="relative rounded-2xl p-6 bg-cream/40 border border-lightBlue transition-transform duration-300"
-                style={{
-                  transformStyle: "preserve-3d",
-                  perspective: "1000px",
-                  boxShadow: "0 10px 25px rgba(46,111,133,0.12)",
-                }}
-                onMouseMove={(e) => {
-                  e.currentTarget.style.transform =
-                    "rotateX(6deg) rotateY(-6deg) scale(1.02)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform =
-                    "rotateX(0deg) rotateY(0deg) scale(1)";
-                }}
+                className="group relative rounded-2xl p-6 bg-white/80 backdrop-blur border border-lightBlue transition-all duration-300 shadow-sm hover:shadow-xl hover:-translate-y-1"
               >
-                <div className="flex flex-col items-center text-center">
-                  <div className="p-3 rounded-full bg-lightBlue/40">
-                    <Icon size={28} className="text-primary" />
-                  </div>
-
-                  <h3 className="mt-4 text-lg font-semibold text-primary">
-                    {item.title}
-                  </h3>
+                {/* ICON */}
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-lightBlue/40 group-hover:bg-primary/10 transition">
+                  <Icon size={26} className="text-primary" />
                 </div>
+
+                {/* TITLE */}
+                <h3 className="mt-4 text-lg font-semibold text-primary">
+                  {item.title}
+                </h3>
+
+                <div className="mt-4 h-px w-16 mx-auto bg-lightBlue/70" />
               </article>
             );
           })}
