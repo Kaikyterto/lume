@@ -1,4 +1,4 @@
-import logo from "../assets/logo-lume.JPEG";
+import logo from "../assets/16 2.PNG";
 import { siteContent } from "../content/site";
 
 export default function Footer() {
