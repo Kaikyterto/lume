@@ -13,11 +13,9 @@ export default function About() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Overlay: Aumentei para 85% para o padrão do fundo ficar sutil e não atrapalhar a leitura */}
       <div className="absolute inset-0 bg-white/85" />
 
       <div className="relative mx-auto grid w-full max-w-6xl gap-12 px-6 md:grid-cols-2 md:items-center">
-        {/* IMAGEM */}
         <div className="overflow-hidden rounded-3xl shadow-xl border border-lightBlue bg-white">
           <img
             src={hellenPhoto}
@@ -26,19 +24,16 @@ export default function About() {
           />
         </div>
 
-        {/* TEXTO */}
         <div className="font-sans">
-          {/* Título com cor sólida e peso extra */}
           <h2 className="text-4xl font-bold tracking-tight text-primary">
             Sobre a profissional
           </h2>
 
-          {/* Removi o 'text-primary/80' (transparência) e usei cor sólida para contraste máximo */}
           <p className="mt-6 text-lg leading-relaxed font-medium text-primary">
             A Dra. Hellen Dias é a responsável técnica pela clínica e atua com
-            foco em um atendimento odontológico humanizado, ético e
-            especializado, sempre priorizando o conforto e a segurança dos
-            pacientes.
+            foco em um atendimento odontológico humanizado e especializado. Com
+            atendimento voltado ao público infantil, proporciona um cuidado
+            acolhedor, leve e seguro para as crianças.
           </p>
 
           <div className="mt-8 space-y-5">

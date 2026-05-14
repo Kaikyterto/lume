@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/logo-lume.JPEG";
+import logo from "../assets/11 2.PNG";
 import { getWhatsAppUrl, navItems, siteContent } from "../content/site";
 
 export default function Nav() {

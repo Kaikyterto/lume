@@ -1,5 +1,5 @@
 import { getWhatsAppUrl, siteContent } from "../content/site";
-import logo from "../assets/logo-lume.JPEG";
+import logo from "../assets/logo-lume.png";
 
 export default function Hero() {
   const scheduleLink = getWhatsAppUrl("Olá! Gostaria de agendar uma consulta.");
@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden py-24 font-sans bg-gradient-to-br from-primary/20 via-white to-lightBlue/20"
+      className="relative overflow-hidden py-24 font-sans bg-gradient-to-br from-primary/10 via-white to-lightBlue/20"
     >
       <div
         className="absolute inset-0 z-0 pointer-events-none overflow-hidden"
@@ -18,16 +18,15 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col-reverse items-center gap-12 px-6 md:grid md:grid-cols-2 md:items-center">
-        {/* TEXTO */}
         <div>
           <h1 className="mt-6 text-4xl font-extrabold leading-tight md:text-5xl text-purple">
             Seu sorriso merece o melhor cuidado
           </h1>
 
           <p className="mt-6 text-lg text-slate-700">
-            Odontologia integrada com tecnologia de ponta e atendimento
-            humanizado. Cuidamos da sua saúde bucal com excelência, conforto e
-            carinho.
+            Contamos com especialistas para atender desde as crianças até os
+            vovôs, oferecendo odontologia integrada, tecnologia de ponta e
+            atendimento humanizado para todas as fases da vida.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
@@ -47,9 +46,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* LOGO / CARD VISUAL */}
         <div className="flex justify-center">
-          <div className="bg-white rounded-3xl shadow-xl p-10 w-full max-w-md border border-lightBlue flex items-center justify-center">
+          <div className="rounded-3xl  p-10 w-full max-w-md  flex items-center justify-center">
             <img src={logo} alt="Lume Odontologia" className="w-64 h-auto" />
           </div>
         </div>

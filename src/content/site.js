@@ -30,6 +30,11 @@ export const navItems = [
 
 export const faqData = [
   {
+    question: "Meu filho(a) já vai ser sedado na primeira consulta?",
+    answer:
+      "Não. Cada criança é avaliada de forma individual, conversamos com os responsáveis para entender a melhor abordagem para o atendimento.",
+  },
+  {
     question:
       "Meu filho(a) tem medo de dentista. Ele(a) vai conseguir ser atendido(a)?",
     answer:
