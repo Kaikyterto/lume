@@ -2,7 +2,7 @@ import {
   Baby,
   Activity,
   Smile,
-  ShieldPlus,
+  ShieldCheck,
   Stethoscope,
   Sparkles,
   ScanFace,
@@ -20,6 +20,7 @@ export default function Services() {
     { title: "Clínico Geral", icon: Stethoscope },
     { title: "Reabilitação e Estética", icon: Sparkles },
     { title: "Harmonização Orofacial", icon: ScanFace },
+    { title: "Endodontia", icon: ShieldCheck },
   ];
 
   return (
